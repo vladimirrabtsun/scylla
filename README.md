@@ -10,4 +10,5 @@ $ docker-compose exec workspace bash
 $$ chmod -R 777 storage bootstrap/cache
 $$ composer install
 $$ php artisan key:generate
+$$ php artisan migrate
 ```
