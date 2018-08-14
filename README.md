@@ -7,9 +7,9 @@ $ ./make-laravel-env.sh
 $ cd laradock
 $ docker-compose up -d nginx mysql phpmyadmin
 $ docker-compose exec workspace bash
+$$ chmod -R 777 storage bootstrap/cache
 $$ composer install
 $$ npm install
-$$ chmod -R 777 storage bootstrap/cache
 $$ php artisan key:generate
 $$ php artisan migrate
 ```
